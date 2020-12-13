@@ -5,7 +5,7 @@
   
   Data Preprocessing is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric (ie. Value observation of '€625K' to 625000).
   
-  Feature Engineering in this project was composed of two parts -  1. Creating variables that conote the general position of a player relative to their Best Position (BP) and 2. created a variable for BMI (body mass index) with the given height and weight observations for each player.
+  Feature Engineering in this project was composed of two parts -  1. Creating variables that connote the general position of a player relative to their Best Position (BP) and 2. created a variable for BMI (body mass index) with the given height and weight observations for each player.
   
  I begin modeling with a Principal Component Analysis of the data. I then perform K-Means clustering on two PCA dimensions which leads me to some very interersting discoveries upon which I elaborate further in the results section. 
  
