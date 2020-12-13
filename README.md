@@ -5,7 +5,13 @@
   
   __Data Preprocessing__ is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric. This was done on Wage, Value, Heigh and Weight variables (ie. Value observation object type '€625K' cleaned to be a numeric __625000__). Once Wage and Value were cleaned, I found that there were 0's inplace for some observations. I cross validated this with sofifa.com (where the data comes from), and it turns out the website just doesn't yet have data on those players. Essentially, every '0' inplace for Value overlaps with that of Wage, so we drop observations relative to Wage = 0, and that takes care of the Data Cleaning.
   
-  __Feature Engineering__ in this project was composed of two parts -  1. Creating variables that connote the general position of a player relative to their Best Position (BP) and 2. Creating a variable for BMI (body mass index) with the given height and weight observations for each player.
+  __Feature Engineering__  is composed of two parts:  
+  1. Creating variables that connote the general position of a player relative to their Best Position (BP).
+  2. Creating a variable for BMI (body mass index) with the given height and weight observations for each player.
+  
+  __Data Normalization__ is done in two steps: 
+  1. Min-Max Normalization of the accompanying variables alongside our target variable, 'Value'. 
+  2. 'Value' was un-normally distributed (skewed to the right), so to combat this a Log-Normalization was applied to 'Value'.
   
  I begin modeling with a Principal Component Analysis of the data. I then perform K-Means clustering on two PCA dimensions which leads me to some very interersting discoveries upon which I elaborate further in the results section. 
  
