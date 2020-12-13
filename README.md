@@ -5,11 +5,11 @@
   
   Data Preprocessing is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric (ie. Value observation of '€625K' to 625000).
   
-  Feature Engineering in this project was composed of two parts -  1. Creating variables that connote the general position of a player relative to their Best Position (BP) and 2. created a variable for BMI (body mass index) with the given height and weight observations for each player.
+  Feature Engineering in this project was composed of two parts -  1. Creating variables that connote the general position of a player relative to their Best Position (BP) and 2. Creating a variable for BMI (body mass index) with the given height and weight observations for each player.
   
  I begin modeling with a Principal Component Analysis of the data. I then perform K-Means clustering on two PCA dimensions which leads me to some very interersting discoveries upon which I elaborate further in the results section. 
  
- In terms of predictive modeling, my target variable in this project is 'Value', which is the monetary worth of a player. I chose Linear Regression, Random Forest Regression and Neural Network predicitve models in this project. Predicting 'Value' can lead us further into more detailed player analysis that can potentially help us capitalize on stars, current or future.
+ In terms of predictive modeling, my target variable in this project is 'Value', which is the monetary worth of a player given their attributes. Predicting 'Value' can lead us further into more detailed player analysis that can potentially help us capitalize on stars, current or future. I choose Linear Regression, Random Forest Regression and Neural Network to predict 'Value' in this project. 
   
 I use both Python (Jupyter Notebook) and R in my analysis.
 
