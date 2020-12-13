@@ -15,8 +15,8 @@ __Linear Regression:__
 + Train r2 Score: 96.791% 
 + Test r2 Score: 96.688 
 + Adjusted r2 Score: 97.494% 
-+ RMSE: 3570337.072269582 
-+ MAE: 716693.0674474129 
++ RMSE: 3570337.072269582 (Inverted value in Euros)
++ MAE: 716693.0674474129 (Inverted value in Euros)
 + Cross Validation Score: 91.488% 
 
 __Random Forest Regressor:__
@@ -24,8 +24,8 @@ __Random Forest Regressor:__
 + Train r2 Score: 99%
 + Test r2 Score: 99%
 + Adjusted r2 Score: 99%
-+ RMSE: 1021000.98
-+ MAE: 268742.83
++ RMSE: 1021000.98 (Inverted value in Euros)
++ MAE: 268742.83 (Inverted value in Euros)
 + Cross Validation Score: 97.5%
 
 # R
