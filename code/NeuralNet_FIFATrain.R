@@ -73,6 +73,7 @@ c(loss, mape) %<-% (model %>% evaluate(testing , testingtarget, verbose = 0))
 paste0("Mean absolute percent error on test set: ", sprintf("%.2f", mape ,'%'))
 paste0("Mean squared error on test set: ", sprintf("%.14f", loss ,'%'))
 
+#Predict
 pred <- model %>% predict(testing)
 #for EXPM1
 #pred <- expm1(pred)
