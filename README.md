@@ -32,7 +32,7 @@ __Random Forest Regressor:__
 + Cross Validation Score: 97.5%
 
 # R
-In the R code, I attempt to run a Sequential Neural Network model with the use of Keras/TensorFlow. The data I use for this is the [(un-normalized) preprocessed data](https://github.com/arvin-ds/FIFA21_PCA_Clustering_and_Predictive_Modeling/blob/main/data/FIFATrain.csv) from the IPYNB file  - the only difference here is I handle the methodical data normalization in RStudio; It seemed more fitting to normalize the data column-wise for the Neural Network model.
+In the R code, I attempt to run a __Sequential Neural Network model__ with the use of Keras/TensorFlow. The data I use for this is the [(un-normalized) preprocessed data](https://github.com/arvin-ds/FIFA21_PCA_Clustering_and_Predictive_Modeling/blob/main/data/FIFATrain.csv) from the IPYNB file  - the only difference here is I handle the methodical data normalization in RStudio; It seemed more fitting to normalize the data column-wise for the Neural Network model.
 ## Model Results
 __Neural Network:__
 + MAPE: __.5%__
