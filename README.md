@@ -1,7 +1,15 @@
 # FIFA 21 PCA, Clustering and Predictive Modeling
 ## Hofstra University Graduate Business Analytics and Data Mining Course Final Project Fall 2020
 ### Summary
-  In this project, my goal is to showcase the Data Mining and Preprocessing techniques I have spent the last several months researching and practicing and put them to use. I use the FIFA 21 dataset which is found on [Kaggle](https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset). I first begin with a Principal Component Analysis of the data. I then perform K-Means clustering on two PCA dimensions which leads me to some very interersting discoveries upon which I elaborate further in the results section. In terms of modeling, my target variable in this project is 'Value', which is the monetary worth of a player. I chose Linear Regression, Random Forest Regression and Neural Network predicitve models in this project. Predicting 'Value' can lead us further into more detailed player analysis that can potentially help us capitalize on stars, current or future.
+  In this project, my goal is to showcase the Data Mining and Preprocessing techniques I have spent the last several months researching and practicing and put them to use. I use the FIFA 21 dataset which is found on [Kaggle](https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset). 
+  
+  Data Preprocessing is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric (ie. Value observation of '€625K' to 625000).
+  
+  Feature Engineering in this project was composed of two parts -  1. Creating variables that conote the general position of a player relative to their Best Position (BP) and 2. created a variable for BMI (body mass index) with the given height and weight observations for each player.
+  
+ I begin modeling with a Principal Component Analysis of the data. I then perform K-Means clustering on two PCA dimensions which leads me to some very interersting discoveries upon which I elaborate further in the results section. 
+ 
+ In terms of predictive modeling, my target variable in this project is 'Value', which is the monetary worth of a player. I chose Linear Regression, Random Forest Regression and Neural Network predicitve models in this project. Predicting 'Value' can lead us further into more detailed player analysis that can potentially help us capitalize on stars, current or future.
   
 I use both Python (Jupyter Notebook) and R in my analysis.
 
