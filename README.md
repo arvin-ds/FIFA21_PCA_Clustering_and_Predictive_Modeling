@@ -3,11 +3,11 @@
 ### Summary
   In this project, my goal is to showcase the Data Mining and Preprocessing techniques I have spent the last several months researching and practicing and put them to use. I use the FIFA 21 dataset which is found on [Kaggle](https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset). 
   
-  __Data Preprocessing__ is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric. This was done on Wage, Value, Heigh and Weight variables (ie. Value observation object type '€625K' cleaned to be a numeric __625000__). Once Wage and Value were cleaned, I found that there were 0's inplace for some observations. I cross validated this with sofifa.com (where the data comes from), and it turns out the website just doesn't yet have data on those players. Essentially, every '0' inplace for Value overlaps with that of Wage, so we drop observations relative to Wage = 0, and that takes care of the Data Cleaning.
+  __Data Preprocessing__ is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric. This was done on 'Wage', 'Value', 'Height' and 'Weight' variables (ie. object type '€625K' cleaned to be numerical __625000__). Once Wage and Value were cleaned, I found that there were 0's inplace for some observations. I cross validated this with sofifa.com (where the data comes from), and it turns out the website just doesn't yet have data on those players. Essentially, every '0' inplace for Value overlaps with that of Wage, so we drop observations relative to Wage = 0, and that takes care of the Data Cleaning.
   
   __Feature Engineering__  is composed of two parts:  
   1. Creating variables that connote the general position of a player relative to their Best Position (BP).
-  2. Creating a variable for BMI (body mass index) with the given height and weight observations for each player.
+  2. Creating a variable for BMI (body mass index) with the given 'Height' and 'Weight' observations for each player.
   
   __Data Normalization__ is done in two steps: 
   1. Min-Max Normalization of the accompanying variables alongside our target variable, 'Value'. 
