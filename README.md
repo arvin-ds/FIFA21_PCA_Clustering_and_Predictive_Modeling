@@ -3,7 +3,7 @@
 ### Summary
   In this project, my goal is to showcase the Data Mining and Preprocessing techniques I have spent the last several months researching and practicing and put them to use. I use the FIFA 21 dataset which is found on [Kaggle](https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset). 
   
-  __Data Preprocessing__ is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric. This was done on 'Wage', 'Value', 'Height' and 'Weight' variables (ie. object type '€625K' cleaned to be numerical __625000__). Once Wage and Value were cleaned, I found that there were 0's inplace for some observations. I cross validated this with sofifa.com (where the data comes from), and it turns out the website just doesn't yet have data on those players. Essentially, every '0' inplace for Value overlaps with that of Wage, so we drop observations relative to Wage = 0, and that takes care of the Data Cleaning.
+  __Data Preprocessing__ is an integral step that took up about 60% of the time in this project. It started with dropping problematic variables, and lead to some functional data cleaning of object types to numeric. This was done on 'Wage', 'Value', 'Height' and 'Weight' variables (ie. object type '€625K' cleaned to be numerical __625000__). Once Wage and Value were cleaned, I found that there were 0's inplace for some observations. I cross validate this with sofifa.com (where the data comes from), and it turns out the website just doesn't yet have data on those players. Essentially, every '0' inplace for 'Value' overlaps with that of 'Wage', so we drop observations relative to Wage = 0, and that takes care of the Data Cleaning.
   
   __Feature Engineering__  is composed of two parts:  
   1. Creating variables that connote the general position of a player relative to their Best Position (BP).
@@ -11,7 +11,7 @@
   
   __Data Normalization__ is done in two steps: 
   1. Min-Max Normalization of the accompanying variables alongside our target variable, 'Value'. 
-  2. 'Value' was un-normally distributed (skewed to the right), so to combat this a Log-Normalization was applied to 'Value'.
+  2. 'Value' is un-normally distributed (skewed to the right), so to combat this a Log-Normalization was applied to 'Value'.
   
  I begin modeling with a Principal Component Analysis of the data. I then perform K-Means clustering on two PCA dimensions which leads me to some very interersting discoveries upon which I elaborate further in the results section. 
  
