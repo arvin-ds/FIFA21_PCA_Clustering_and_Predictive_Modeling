@@ -1,6 +1,9 @@
 # FIFA 21 PCA, Clustering and Predictive Modeling
 ## Hofstra University Graduate Business Analytics and Data Mining Course Final Project Fall 2020
-  In this project, my goal is to showcase the Data Mining and Preprocessing techniques I have spent the last several months researching and practicing and put them to use. I use the FIFA 21 dataset which is found on [Kaggle](https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset). My target variable in this project is 'Value', which is the monetary worth of a player. Predicting 'Value' can lead us further into more detailed player analysis that can potentially help us capitalize on stars, current or future.
+### Summary
+  In this project, my goal is to showcase the Data Mining and Preprocessing techniques I have spent the last several months researching and practicing and put them to use. I use the FIFA 21 dataset which is found on [Kaggle](https://www.kaggle.com/ekrembayar/fifa-21-complete-player-dataset). I first begin with a Principal Component Analysis of the data. I then perform K-Means clustering on two PCA dimensions which leads me to some very interersting discoveries upon which I elaborate further in the results section. In terms of modeling, my target variable in this project is 'Value', which is the monetary worth of a player. I chose Linear Regression, Random Forest Regression and Neural Network predicitve models in this project. Predicting 'Value' can lead us further into more detailed player analysis that can potentially help us capitalize on stars, current or future.
+  
+I use both Python (Jupyter Notebook) and R in my analysis.
 
 # Python
   In the IPYNB notebook, I've preprocessed the FIFA 21 data upon which I attempt to run a Linear Regression model and a Random Forest Regressor model to predict 'Value'. Before that, however, I run a Principal Component Analysis and K-Means Clustering. My Results are the following:
